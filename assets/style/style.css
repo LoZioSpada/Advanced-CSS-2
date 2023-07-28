@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
     display: flex;
     background-color: #fef7e2;
@@ -7,6 +13,7 @@ header{
     padding-left: 5em;
     padding-right: 5em;
     position: sticky;
+    margin-bottom: 10vh;
 }
 
 navbar {
@@ -32,4 +39,53 @@ navbar img{
     height: 100px;
     width: 100px;
     cursor: pointer;
+}
+
+#cards{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 10vh;
+}
+
+#card {
+    height: 500px;
+    width: 400px;
+    background-color: #fef7e2;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+#card img {
+    height: 350px;
+    width: 400px;
+    border-radius: 20px 20px 0 0;
+}
+
+.description {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.honey{
+    font-size: 20px;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.break{
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    background-color: #ffdf7e;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1em;
+    cursor: pointer;
+    margin-left: 5em;
+    margin-right: 5em;
 }
