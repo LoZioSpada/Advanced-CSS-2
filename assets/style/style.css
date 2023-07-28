@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@media screen and (max-width: 768px) {
+    body{
+        max-width: 100%;
+    }
+}
+
+
 
 *{
     font-family: 'Roboto', sans-serif;
+    color: #5F2205;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 header{
@@ -13,6 +23,7 @@ header{
     padding-left: 5em;
     padding-right: 5em;
     position: sticky;
+    top: 0;
     margin-bottom: 10vh;
 }
 
@@ -44,7 +55,6 @@ navbar img{
 #cards{
     display: flex;
     justify-content: space-evenly;
-
     margin-bottom: 10vh;
 }
 
@@ -88,4 +98,28 @@ navbar img{
     cursor: pointer;
     margin-left: 5em;
     margin-right: 5em;
+}
+
+#article {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    background-color: #fef7e2;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#article div {
+    font-size: 30px;
+    margin: 2em;
+}
+
+#article img{
+    height: 360px;
+    width: 500px;
+}
+
+.text {
+    min-width: 200px;
+    flex-basis: 50%;
 }
